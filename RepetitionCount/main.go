@@ -8,15 +8,7 @@ str:="asdfghjswtrbyuioskkjhgdetuiuwt"
  
 
  for _,ch:=range str{
-	mapCount[ch]=0
- }
- for key,value:=range mapCount{
-	for _,ch:=range str{
-		if key==ch{
-			value++
-			mapCount[ch]=value
-		}
-	}
+	mapCount[ch]++
  }
  for key,value:=range mapCount{
 	if value>1{
